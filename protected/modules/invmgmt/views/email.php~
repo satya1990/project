@@ -1,4 +1,4 @@
 <?PHP
-echo 'helloworld';
+echo 'layouts/email.php';
 
 ?>

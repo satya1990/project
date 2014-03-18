@@ -20,3 +20,11 @@ array('label'=>'Contact list', 'url'=>array('create')),
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+
+
+<?php
+echo 'dropdown';
+
+
+
+//<?php echo $searchForm->dropDownList($model, 'category_id', CHtml::listData(Category::model()->findAll(), 'id', 'name')); ?>

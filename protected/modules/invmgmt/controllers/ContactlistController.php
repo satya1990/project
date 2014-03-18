@@ -6,8 +6,22 @@ class ContactlistController extends Controller
 //added
 public function actionEmail()
 	{
-		$this->render('email');
-	}	
+       // $model=new Contactlist;
+
+
+        /*
+        $model1=new Event;
+        $model2=new Contactlist;
+    //passing
+		$this->render('email',array('model1'=>$model1,'model2'=>$model2));
+        */
+
+       // $model=new Contactlist;
+        //$model1=new Event;
+
+
+        $this->render('email');
+	}
 
 
 /**

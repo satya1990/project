@@ -12,7 +12,8 @@ class InvmgmtModule extends CWebModule
 			'invmgmt.models.*',
 			'invmgmt.components.*',
 		));
-
+      
+        Yii::import('application.modules.invmgmt.models.*');
 		//make sure u have invitation.php view file in invmgmt/views/layouts
 		$this->layout = 'invitation';
 	}

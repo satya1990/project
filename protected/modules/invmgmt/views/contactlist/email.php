@@ -1,15 +1,24 @@
+
 <?php
 
-echo 'helloworld';
+ini_set('error_reporting',E_ALL);
+ini_set('display_errors','On');
 
-echo CHtml::img('http://4.bp.blogspot.com/-Ep5c1cGIj9c/UvSX3nb9OPI/AAAAAAAAA6Y/j2MeTBsAbhc/s1600/gsmarena_001.jpg');
+$form=$this->beginWidget('CActiveForm', array(
+        'id'=>'contact-form',
+    // Please note: When you enable ajax validation, make sure the corresponding
+    // controller action is handling ajax validation correctly.
+    // There is a call to performAjaxValidation() commented in generated controller code.
+    // See class documentation of CActiveForm for details on this.
+    'enableAjaxValidation'=>false,
+));
 
+echo 'email'.'<br>';
 
-//echo CHtml::link('google'=>"http://www.google.com");
+echo var_dump($_POST);
 
-echo CHtml::linkButton();
+ $this->endWidget();
 
-//CHtml::inputField('radio','name','sel',{return;});
 
 
 ?>

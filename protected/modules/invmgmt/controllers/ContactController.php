@@ -35,7 +35,7 @@ class ContactController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','contactlist'),
+				'actions'=>array('create','update','contactlist','email'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -47,6 +47,16 @@ class ContactController extends Controller
 			),
 		);
 	}
+
+    //added
+    public function actionemail()
+    {
+        $a=new Event;
+        //$b=new Contactlist;
+       // $model=new Contactlist;
+
+        $this->render('email',array('name'=>$a,));
+    }
 
 	/**
 	 * Displays a particular model.

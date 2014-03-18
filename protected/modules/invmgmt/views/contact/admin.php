@@ -71,9 +71,15 @@ $this->renderPartial('_search',array(
 			'class'=>'CButtonColumn',
 		),
 	),
-)); 
+));
+
+
 
 ?>
+
+
+
+
 <button type="button" class="btn btn-success">Success</button>
 
 <!-- Contextual button for informational alert messages -->

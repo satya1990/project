@@ -40,7 +40,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 )); ?>
 </div><!-- search-form -->
 
-<form name='fname'>
+
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'contactlist-grid',
@@ -65,7 +65,4 @@ array(
 ?>
 
 
-<input type=submit action="http://localhost/amantran/reccheck.php" method='post' />
 
-
-</form>

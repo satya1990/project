@@ -16,7 +16,7 @@ class Contactlist extends CActiveRecord
 
 	//added
 	public $active;
-
+import('application.modules.eventmgmt.models.Event');
 	/**
 	 * @return string the associated database table name
 	 */
